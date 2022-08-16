@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Home 🇧🇩 bank</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-6xl mt-10 text-center font-semibold">
+        Hi Biplob! <span class="text-blue-400">Your Dashboard 💻 </span>
+      </h1>
+    </header>
+    <main>
+      <section>
+        <div class="grid grid-cols-3 py-8 mt-12 gap-4 w-9/12 m-auto">
+          <div
+            class="bg-blue-400 drop-shadow-2xl text-white pl-5 py-10 rounded-xl"
+          >
+            <h2 class="text-2xl font-semibold">Deposite</h2>
+            <h1 id="" class="text-4xl font-bold">
+              $<span id="deposite">00</span>
+            </h1>
+          </div>
+          <div
+            class="bg-pink-500 drop-shadow-2xl text-white pl-5 py-10 rounded-xl rounded-xl"
+          >
+            <h2 class="text-2xl font-semibold">Withdraw</h2>
+            <h1 class="text-4xl font-bold">$<span id="withdraw">00</span></h1>
+          </div>
+          <div
+            class="bg-emerald-400 text-white drop-shadow-2xl pl-5 py-10 rounded-xl"
+          >
+            <h2 class="text-2xl font-semibold">Balance</h2>
+            <h1 class="text-4xl font-bold">$<span id="balance">00</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-2 py-8 mt-12 gap-4 w-9/12 m-auto">
+          <div
+            class="bg-blue-400 drop-shadow-2xl text-white pl-5 py-10 rounded-xl"
+          >
+            <h2 class="text-4xl mb-3 text-white font-bold">Please Deposite</h2>
+
+            <input
+              id="input-deposite"
+              class="block text-black rounded w-2/4 h-8 mb-5"
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter Your Deposite Ammount"
+            />
+            <button
+              id="deposite-btn"
+              class="bg-white font-bold mb-5 text-xl px-8 py-2 rounded drop-shadow-2xl text-blue-400 hover:bg-blue-600 hover:text-white"
+            >
+              Submit
+            </button>
+          </div>
+
+          <div
+            class="bg-pink-500 drop-shadow-2xl text-white pl-5 py-10 rounded-xl rounded-xl"
+          >
+            <h2 class="text-4xl mb-3 text-white font-bold">Please Withdraw</h2>
+
+            <input
+              id="input-withdraw"
+              class="block w-2/4 h-8 mb-5 text-black rounded"
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter Your Withdraw Ammount"
+            />
+            <button
+              id="withdraw-btn"
+              class="bg-white font-bold mb-5 text-xl px-8 py-2 rounded drop-shadow-2xl text-pink-400 hover:bg-pink-600 hover:text-white"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/home.js"></script>
+  </body>
+</html>

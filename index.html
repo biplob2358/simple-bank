@@ -1,1 +1,46 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Bangladesh Bank</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-6xl mt-10 text-center font-semibold">
+        Welcome To <span class="text-blue-400">Bangladesh Bank 🏦</span>
+      </h1>
+    </header>
+    <main>
+      <section class="w-9/12 bg-cyan-400 mt-12 pl-5 py-10 m-auto rounded-xl">
+        <h2 class="text-4xl mb-3 text-white font-bold">Please Login</h2>
+
+        <input
+          id="input-email"
+          class="block w-2/4 mb-5"
+          type="email"
+          name=""
+          id=""
+          placeholder="Enter Your Email"
+        />
+        <input
+          id="input-password"
+          class="mb-5 block w-2/4"
+          type="password"
+          name=""
+          id=""
+          placeholder="Enter Your Password"
+        />
+        <button
+          id="submit-btn"
+          class="bg-white font-bold mb-5 text-xl px-8 py-2 rounded drop-shadow-2xl text-blue-400 hover:bg-orange-600 hover:text-white"
+        >
+          Login
+        </button>
+      </section>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>
